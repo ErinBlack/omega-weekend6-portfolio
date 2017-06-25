@@ -5,12 +5,11 @@ var app = express();
 // Using requst module to make HTTP requests from the server
 // https://www.npmjs.com/package/request
 var request = require('request');
-var keys = require('./githubKeys');
 
 // http://www.tgreenidge.com/blog/twitter-keys-heroku
 // API Keys are environment variables in Heroku
-var username = process.env.USER_NAME || keys.username;
-var oauthToken = process.env.GIT_TOKEN || keys.oauthToken;
+var username = process.env.USER_NAME || require('./githubKeys').username;
+var oauthToken = process.env.GIT_TOKEN || require('./githubKeys').oauthToken;
 
 app.use(express.static('public'));
 
