@@ -1,0 +1,379 @@
+html, body {
+height: 100%;
+margin: 0;
+}
+
+/* Font Styles */
+    h1{
+      font-family: 'Questrial', sans-serif;
+      color: #f1f0f0;
+      font-size: 2.6em;
+      margin: 0;
+    }
+    h2{
+      font-family: 'Questrial', sans-serif;
+      color: #70706d;
+      font-size: 2em;
+      margin: 0;
+    }
+
+    h3{
+      font-family: 'Questrial', sans-serif;
+      color: #70706d;
+      font-size: 1.6em;
+      margin: 0;
+    }
+
+    h4{
+      font-family: 'Sanchez', serif;
+      color: #70706d;
+      font-size: 1.2em;
+      margin: 0;
+    }
+
+    h5{
+      font-family: 'Questrial', sans-serif;
+      color: #333;
+      font-size: .9em;
+      margin: 10px 0;
+    }
+
+    p{
+      font-family: 'Sanchez', serif;
+      color: #70706d;
+      font-size: 1em;
+      margin: 0;
+    }
+
+    li {
+      font-family: 'Sanchez', serif;
+      color: #70706d;
+      font-size: 1em;
+      line-height: 180%;
+      margin: 0 0 15px 0;
+    }
+
+    a{
+      color: #f1f0f0;
+      text-decoration: underline;
+    }
+/* Header Styles */
+    header {
+      background-color: #70706d;
+      color: #f1f0f0;
+      padding: 10px 60px;
+      overflow:hidden;
+    }
+
+    header p {
+      color: #f1f0f0;
+    }
+
+    #headerLogo {
+      width: 33%;
+      float: left;
+    }
+
+    #headerName {
+      width: 33%;
+      float: left;
+      text-align: center;
+      margin: 10px 0;
+    }
+
+    #titleName {
+      font-family: 'Questrial', sans-serif;
+      font-weight: lighter;
+      color: #f1f0f0;
+      font-size: 1.5em;
+    }
+
+
+    #headerNumber {
+      width: 32%;
+      float: right;
+      text-align: right;
+      margin: 10px 0;
+    }
+
+    #headerPhone {
+        font-family: 'Questrial', sans-serif;
+        color: #f1f0f0;
+        font-size: 1em;
+        margin: 0;
+    }
+
+    #headerUnderline {
+      background-color: #4bb3c2;
+      height: 20px;
+    }
+
+/* Page Navigation */
+    .infoSection {
+      margin: 40px 0 0 40px;
+    }
+    .pageNavigation {
+      background-color: #BF745B !important
+    }
+
+    .navButton {
+      margin: 5px ;
+      border: .5px solid #f1f0f0;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+
+/*Profile Styles*/
+
+    .profileImg {
+      max-width: 300px;
+    }
+
+    .profileHeader {
+      margin: 0 0 0 35px;
+    }
+    .profilePar {
+      margin: 0 0 0 35px;
+    }
+    .title {
+      margin: 30px 0 0 35px;
+    }
+
+    .panelContainer {
+      margin: 40px 0;
+    }
+
+/*Portfolio Styles*/
+  .repoData {
+    height: 250px;
+  }
+
+  .repoHeading {
+    background-color: #4bb3c2;
+    color: white;
+    padding: 10px;
+    margin: -3px -3px 10px -3px;
+  }
+
+  .repoButton {
+    color: #3a3a37;
+    background-color: #D6A48F;
+  }
+/* Footer Styles */
+footer {
+  background-color: #70706d;
+  color: #f1f0f0;
+  margin: 120px 0 0 0;
+  padding: 10px 60px;
+  overflow:hidden;
+  text-align: center;
+  font-family: 'Questrial', sans-serif;
+  font-size: 1em;
+  line-height: 180%;
+  height:100px;;
+}
+
+#footerTxt {
+  margin-top: 20px;
+}
+
+
+
+/* Experience */
+    #experienceGraph {
+      width: 100%;
+      text-align: center;
+      margin: 40px 0 0 0;
+
+    }
+    .title h2 {
+      color: #bf745b;
+      text-align: center;
+      margin:60px 0 0 0 ;
+      font-size: 3em;
+    }
+
+
+
+/* Job Positions */
+  .position {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 60px 30px 0 30px;
+    overflow:auto;
+  }
+
+  .responsiblities {
+    width: 50%;
+    float: left;
+  }
+
+ #app {
+
+    width: 100%
+  }
+  #pureRed {
+
+     width: 100%
+   }
+
+  .accomplishments {
+    width: 50%;
+    float: right;
+
+  }
+
+  .posAttr{
+    color: #bf745b;
+    font-family: 'Sanchez', serif;
+    font-size: 1em;
+    margin: 20px 0 10px 0 ;
+  }
+
+/* Programs */
+
+  #programs{
+    margin: 40px 0;
+  }
+
+  #progGraph{
+    width: 100%;
+  }
+  #programsMobile {
+    display: none;
+  }
+
+
+
+/* Media Queries */
+
+
+
+
+
+@media only screen and (max-width: 960px){
+  .repoData {
+    height: 150px;
+  }
+}
+
+@media only screen and (max-width: 768px){
+
+  h1{
+    font-size: 1.5em;
+  }
+  h2{
+    font-size: 1.4em;
+  }
+
+  h3{
+    font-size: 1.3em;
+  }
+
+  h4{
+    font-size: .8em;
+  }
+
+  p{
+    font-size: .8em;
+  }
+
+  /* Header Styles */
+  header {
+    padding: 30px 30px;
+  }
+
+  #headerLogo {
+    width: 100%;
+    text-align: center
+  }
+
+  #headerName {
+  display: none;
+  }
+
+  #headerNumber {
+    display: none;
+  }
+
+  .responsiblities {
+    width: 100%;
+    float: none;
+  }
+
+  .accomplishments {
+    width: 100%;
+    float: none;
+  }
+
+
+
+}
+
+@media only screen and (max-width: 550px){
+  #experienceGraph {
+    display: none;
+  }
+
+  #progGraph {
+    display: none;
+  }
+
+  .prgm {
+    text-align: center;
+    padding: 30px 0 0 0;
+  }
+  .prgm p {
+    padding: 10px 0 0 0;
+  }
+
+  #programsMobile {
+    margin: 20px;
+    display: block;
+    overflow: hidden;
+  }
+
+  #ill {
+    width: 45%;
+    float: left;
+  }
+
+  #ind {
+    width: 45%;
+    float: right;
+  }
+  #pht {
+    width: 45%;
+    float: left;
+  }
+
+  #html {
+    width: 45%;
+    float: right;
+  }
+
+
+  #wordPress {
+    width: 45%;
+    float: left;
+  }
+
+  #premiere {
+    width: 45%;
+    float: right;
+  }
+
+  .progImg{ width: 75px;}
+
+  footer {
+    padding: 10px 60px;
+    overflow:hidden;
+    text-align: center;
+    font-family: 'Questrial', sans-serif;
+    font-size: .75em;
+    line-height: 180%;
+    height: 100px;
+  }
+
+  }

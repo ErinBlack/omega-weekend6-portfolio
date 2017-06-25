@@ -1,0 +1,14 @@
+<div class="" ng-init="mp.getPortfolio()">
+  <div class="row">
+    <div class="col-sm-4 " ng-repeat= "repo in mp.repoData">
+      <div class="thumbnail repoData">
+        <h4 class="repoHeading">{{repo.name}}</h4>
+        <p class="repoPar">{{repo.description}}</p>
+        <h5 class="repoDate">Last Updated On: {{repo.updated_at | date : format : full-date}}</h5>
+        <a href="{{repo.html_url}}" class="btn repoButton">See Repo</a>
+      </div>
+
+    </div>
+  </div>
+
+</div>

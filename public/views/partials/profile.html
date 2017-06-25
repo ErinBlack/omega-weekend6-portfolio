@@ -1,0 +1,46 @@
+<div ng-init="mp.getProfile()">
+  <div class="row">
+    <div class="col-sm-4">
+      <img class="thumbnail profileImg" src="{{mp.profileData.avatar_url}}" alt="">
+    </div>
+    <div class="col-sm-8">
+      <h2 class="profileHeader">{{mp.profileData.name}}</h2>
+      <div class="titleUnderline"><img  src="images/headlineUnderline.png" alt="underline"></div>
+      <p class="profilePar">{{mp.profileData.bio}}</p>
+      <!--End  Start Experience-->
+      <div class="title">
+        <h3>Program Knowledge</h3>
+      </div>
+          <div id="programs">
+            <img src="images/programs.png" alt="Programs Graph" id="progGraph">
+          </div>
+          <div id="programsMobile">
+            <div class="prgm" id="ill">
+              <img src="images/illlustrator.png" alt="Programs Graph" class="progImg">
+              <p class="yrs">Adobe Illustrator - 8 Years</p>
+            </div>
+            <div class="prgm" id="ind">
+              <img src="images/indesign.png" alt="Programs Graph" class="progImg">
+              <p class="yrs">Adobe Indesign - 8 Years</p>
+            </div>
+            <div class="prgm" id="pht">
+              <img src="images/photoshop.png" alt="Programs Graph" class="progImg">
+              <p class="yrs">Adobe Photoshop - 8 Years</p>
+            </div>
+            <div class="prgm" id="html">
+              <img src="images/html.png" alt="Programs Graph" class="progImg">
+              <p class="yrs">HTML and CSS - 4 Years</p>
+            </div>
+            <div class="prgm" id="wordPress">
+              <img src="images/wordpress.png" alt="Programs Graph" class="progImg">
+              <p class="yrs">Wordpress - 3 Years</p>
+            </div>
+            <div class="prgm" id="premiere">
+              <img src="images/premiere.png" alt="Programs Graph" class="progImg">
+              <p class="yrs">Adobe Premiere - 3 Years</p>
+            </div>
+          </div>
+        <!--End  Program Experience-->
+    </div>
+
+</div>

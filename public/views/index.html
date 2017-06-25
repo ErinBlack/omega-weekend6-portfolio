@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Erin Black Portfolio Site</title>
+  <script src="vendors/angular.min.js" charset="utf-8"></script>
+  <script src="vendors/angular-route.min.js" charset="utf-8"></script>
+  <script src="scripts/client.js" charset="utf-8"></script>
+  <script src="scripts/github.service.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="vendors/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<!-- myApp -->
+<body ng-app="myApp">
+  <!-- Start Controller -->
+  <div  ng-controller="MyProfile as mp">
+    <!-- Start Header -->
+    <header>
+      <div id="headerLogo">
+        <img id="headerImg" src="images/erin-black-logo-white.png" alt="Erin Black Logo">
+      </div>
+      <div id="headerName">
+        <div id="titleName">{{mp.profileData.name}}</div>
+        <p>5340 Ewing Ave S <br/> Minneapolis, MN 55410</p>
+      </div>
+      <div id="headerNumber">
+        <div id="headerPhone">P: 763.438.6421</div>
+        <p>erinblackdesign@gmail.com</p>
+        <p> <a href="{{mp.profileData.html_url}}">GitHub Profile</a></p>
+      </div>
+    </header><!-- End Header -->
+
+    <!-- Colored Bar Under Header -->
+    <div id="headerUnderline"></div>
+
+    <!-- Start Container -->
+    <div class="container">
+      <!-- Start Profile Section -->
+      <section>
+        <div class="panel panel-default panelContainer">
+          <div class="pageNavigation panel-heading ">
+            <a href="/#!" class="btn navButton">Profile</a>
+            <a href="/#!/portfolio" class="btn navButton">My Work</a>
+          </div>
+          <div class="panel-body">
+            <ng-view>
+
+            </ng-view>
+          </div>
+        </div>
+      </section><!-- End Profile Section -->
+
+    </div> <!-- End Container -->
+  </div> <!-- End Controller -->
+  <!-- Start Footer -->
+  <footer>
+    <div id="footerTxt"> ERIN BLACK  &nbsp; &nbsp; | &nbsp;&nbsp;  5340 Ewing Ave S Minneapolis, MN 55410   <br/>  P: 763.438.6421  &nbsp;&nbsp; | &nbsp;&nbsp;  erinblackdesign@gmail.com </div>
+  </footer>
+  <!-- End Footer -->
+</body>
+</html>
